@@ -3,9 +3,9 @@ import os
 import time
 os.system('clear')
 #Tittle
-z=1
-while z==1:
- z-=1
+game=1
+while game==1:
+ game-=1
  try:
   print("==================")
   print("==Guess A Number==")
@@ -24,6 +24,7 @@ while z==1:
     print(f'======Ronde {ronde}======')
     print("===================")
     print(f'Angka Minimum: {x}')
+    print(f'Angka Maksimum: {y}')
     guess = int(input("Tebak Angka: "))
     if guess == number :
      print("===============")
@@ -49,9 +50,18 @@ while z==1:
      os.system("clear")
      
    if ronde > round:
+    print("======================================")
     print(f'Kamu Kalah angkanya adalah {number}')
+    print("======================================")
  except:
    print("Input Number!")
    time.sleep(1)
    os.system("clear")
-   z+=1
+   game+=1
+
+
+
+
+
+
+ 
